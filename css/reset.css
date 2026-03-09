@@ -1,0 +1,82 @@
+/* reset.css - リセット専用 */
+
+@charset "utf-8";
+
+/* 全要素の余白・パディングをリセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* HTML5要素をブロック表示 */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+  display: block;
+}
+
+/* 見出しの font-weight リセット */
+h1, h2, h3, h4, h5, h6, strong, th {
+  font-weight: normal;
+}
+
+/* リストの装飾リセット */
+ul, ol {
+  list-style: none;
+}
+
+/* リンクの装飾リセット */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 画像の余白・枠線リセット */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+  vertical-align: bottom;
+}
+
+/* テーブルの余白・枠線リセット */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* フォーム要素リセット */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+}
+
+/* フィールドセット・レジェンドのリセット */
+fieldset, legend {
+  padding: 0;
+  border: 0;
+}
+
+/* hr リセット */
+hr {
+  display: none;
+}
+
+/* clearfix */
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  position: relative;
+  min-height: 1px;
+  zoom: 1; /* IE対応 */
+}

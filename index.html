@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | yuna fujii</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
+  <script>
+  $(function(){
+    var current;
+    $.scrollify({
+        section:".box",
+        setHeights:false,
+        before:function(i,box){
+            current = i;
+        },
+    });
+    $(window).on('resize',function(){
+        if(current){
+            var currentScrl = $('.box').eq(current).offset().top;
+            $(window).scrollTop(currentScrl);
+        }
+    });
+  });
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<section id="hero" class="hero box box1">
+  <div class="container">
+    <h1>yuna fujii<div class="subName">Web Designer</div></h1>
+    
+    <p>Webデザインからコーディングまで<br>一貫して制作しています。</p>
+    <p><a href="#works" class="linkText">Works</a></p>
+    <p class="bottomText"><a href="#about">scroll</a></p>
+  </div>
+</section>
+
+<section id="about" class="about box box2">
+  <div class="container row">
+    <h2>About</h2>
+    <div class="container left">
+      <p>
+        派遣・契約社員で<br>Webデザイナーとして7年間勤務。
+      </p>
+      <p>
+        UIデザイン、LP制作、バナー制作など<br>様々なWeb制作に携わってきました。
+      </p>
+      <p>
+        デザインからHTML/CSSコーディング、<br>レスポンシブ対応まで一貫して対応可能です。
+      </p>
+    </div>
+    <div class="container right">
+      <div class="skill">
+        <h3>SKILLS</h3>
+        <ul>
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+          <li>Figma</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+    </div>
+    <p class="bottomText"><a href="#works">scroll</a></p>
+  </div>
+</section>
+
+<section id="works" class="works box box3">
+  <div class="container">
+    <h2>Works</h2>
+
+    <div class="works-grid">
+
+      <a class="work-card" href="works01.html">
+        <p class="category">UI REDESIGN</p>
+        <img src="img/works_card01.png" alt="">
+        <div class="work_title">
+          <h3>webメディアUI改修</h3>
+          <p>株式会社 旅工房</p>
+        </div>
+      </a>
+
+      <a class="work-card" href="works02.html">
+        <p class="category">LP DESIGN</p>
+        <img src="img/works_card02.png" alt="">
+        <div class="work_title">
+          <h3>ECサイトLP制作</h3>
+          <p>株式会社 カウネット</p>
+        </div>
+      </a>
+
+      <a class="work-card" href="works03.html">
+        <p class="category">TEMPORARY SITE</p>
+        <img src="img/works_card03.png" alt="">
+        <div class="work_title">
+          <h3>移転用仮サイト制作</h3>
+          <p>認定NPO法人<br>国際子ども権利センター</p>
+        </div>
+      </a>
+
+      <a class="work-card" href="works04.html">
+        <p class="category">GRAPHIC DESIGN</p>
+        <img src="img/work04_main.png" alt="" class="graph">
+        <div class="work_title">
+          <h3>Webメディア<br>記事用画像</h3>
+          <p>株式会社 旅工房</p>
+        </div>
+      </a>
+
+      <a class="work-card" href="works05.html">
+        <p class="category">BANNER DESIGN</p>
+        <img src="img/works_card05.jpg" alt="" class="bnr">
+        <div class="work_title">
+          <h3>月替わり販促バナー</h3>
+          <p>株式会社 カウネット</p>
+        </div>
+      </a>
+
+      <a class="work-card" href="works06.html">
+        <p class="category">BANNER DESIGN</p>
+        <img src="img/works_card06.png" alt="" class="bnr">
+        <div class="work_title">
+          <h3>その他バナー</h3>
+        </div>
+      </a>
+
+      <p class="bottomText"><a href="#contact">scroll</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact box box4">
+  <div class="container">
+    <h2>Contact</h2>
+    <p>
+      ポートフォリオをご覧いただきありがとうございます。<br>
+      制作のご相談やご質問などありましたら、<br>
+      お気軽にメールにてご連絡ください。
+    </p>
+    <p><a href="mailto:fujicony@icloud.com" class="linkText">
+      fujicony@icloud.com
+    </a></p>
+    <p class="bottomText">© 2026 yuna fujii</p>
+  </div>
+</section>
+
+</body>
+</html>
