@@ -1,0 +1,24 @@
+/*
+Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss
+
+Backtrace:
+/Users/fujiiyuna/.rbenv/versions/3.4.5/lib/ruby/gems/3.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:484:in 'IO.read'
+/Users/fujiiyuna/.rbenv/versions/3.4.5/lib/ruby/gems/3.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:484:in 'Sass::Plugin::Compiler#update_stylesheet'
+/Users/fujiiyuna/.rbenv/versions/3.4.5/lib/ruby/gems/3.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in 'block in Sass::Plugin::Compiler#update_stylesheets'
+/Users/fujiiyuna/.rbenv/versions/3.4.5/lib/ruby/gems/3.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in 'Array#each'
+/Users/fujiiyuna/.rbenv/versions/3.4.5/lib/ruby/gems/3.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in 'Sass::Plugin::Compiler#update_stylesheets'
+/Users/fujiiyuna/.rbenv/versions/3.4.5/lib/ruby/gems/3.4.0/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:294:in 'Sass::Plugin::Compiler#watch'
+/Users/fujiiyuna/.rbenv/versions/3.4.5/lib/ruby/gems/3.4.0/gems/sass-3.4.25/lib/sass/plugin.rb:109:in 'Sass::Plugin#method_missing'
+/Users/fujiiyuna/.rbenv/versions/3.4.5/lib/ruby/gems/3.4.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:360:in 'Sass::Exec::SassScss#watch_or_update'
+/Users/fujiiyuna/.rbenv/versions/3.4.5/lib/ruby/gems/3.4.0/gems/sass-3.4.25/lib/sass/exec/sass_scss.rb:51:in 'Sass::Exec::SassScss#process_result'
+/Users/fujiiyuna/.rbenv/versions/3.4.5/lib/ruby/gems/3.4.0/gems/sass-3.4.25/lib/sass/exec/base.rb:52:in 'Sass::Exec::Base#parse'
+/Users/fujiiyuna/.rbenv/versions/3.4.5/lib/ruby/gems/3.4.0/gems/sass-3.4.25/lib/sass/exec/base.rb:19:in 'Sass::Exec::Base#parse!'
+/Users/fujiiyuna/.rbenv/versions/3.4.5/lib/ruby/gems/3.4.0/gems/sass-3.4.25/bin/sass:13:in '<top (required)>'
+/Users/fujiiyuna/.rbenv/versions/3.4.5/lib/ruby/site_ruby/3.4.0/rubygems.rb:319:in 'Kernel#load'
+/Users/fujiiyuna/.rbenv/versions/3.4.5/lib/ruby/site_ruby/3.4.0/rubygems.rb:319:in 'Gem.activate_and_load_bin_path'
+/Users/fujiiyuna/.rbenv/versions/3.4.5/bin/sass:25:in '<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - style.scss"; }
